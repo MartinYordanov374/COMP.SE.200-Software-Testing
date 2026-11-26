@@ -16,10 +16,10 @@ jobs:
       with:
         node-version: lts/*
 
-    - name: npm install, npm run test-cov
+    - name: npm install, npm run test
       run: |
         npm install
-        npm run test-cov
+        npm run test
 
     - name: Coveralls
       uses: coverallsapp/github-action@v2
